@@ -24,7 +24,7 @@ struct ContentView: View {
                 }
             }
             Spacer()
-            HStack{
+            HStack {
                 remove
                 Spacer()
                 add
@@ -92,4 +92,4 @@ struct ContentView_Previews: PreviewProvider {
 
 
  
-//1h 03 min
+//48 min
