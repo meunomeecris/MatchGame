@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    var emojis: [String] = ["🇧🇷", "🏳️‍🌈", "🇷🇼", "🇫🇷", "🇨🇦", "🇯🇲", "🇧🇩", "🇪🇨", "🇬🇹", "🇵🇼", "🇺🇾", "🇱🇨"]
+    var emojis: [String] = ["🇧🇷", "🏳️‍🌈", "🇹🇳", "🇫🇷", "🇨🇦", "🇯🇲", "🇧🇩", "🇪🇨", "🇬🇹", "🇵🇼", "🇺🇾", "🇱🇨", "🇧🇫", "🇷🇼", "🇪🇺", "🇯🇵"]
     @State var emojiCount = 6
+
     
     var body: some View {
         VStack{
-            HStack{
-                ForEach(emojis[0..<emojiCount], id: \.self) { emoji in
-                    CardView(content: emoji)
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 80))]) {
+                    ForEach(emojis[0..<emojiCount], id: \.self) { emoji in
+                        CardView(content: emoji)
+                            .aspectRatio(CGSize(width: 2, height: 3), contentMode: .fit)
+                    }
+                    .foregroundColor(.red)
                 }
             }
             Spacer()
@@ -28,7 +33,6 @@ struct ContentView: View {
             .padding(.horizontal)
         }
         .padding(.horizontal)
-        .foregroundColor(.red)
     }
     
     
@@ -65,7 +69,7 @@ struct CardView: View {
             let shape = RoundedRectangle(cornerRadius: 20)
             if isFaceUp {
                 shape.fill(.white)
-                shape.stroke(lineWidth: 3)
+                shape.strokeBorder(lineWidth: 3)
                 Text(content).font(.largeTitle)
             } else {
                 shape.fill(.red)
@@ -88,3 +92,4 @@ struct ContentView_Previews: PreviewProvider {
 
 
  
+//1h 03 min
