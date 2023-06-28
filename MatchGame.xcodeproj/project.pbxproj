@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A29D0112A45E85100153AED /* MatchGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29D0102A45E85100153AED /* MatchGameApp.swift */; };
+		8A00D4672A4C6727008601F3 /* MatchGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4662A4C6727008601F3 /* MatchGameApp.swift */; };
 		8A29D0132A45E85100153AED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29D0122A45E85100153AED /* ContentView.swift */; };
 		8A29D0152A45E85200153AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A29D0142A45E85200153AED /* Assets.xcassets */; };
 		8A29D0182A45E85200153AED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A29D0172A45E85200153AED /* Preview Assets.xcassets */; };
@@ -16,8 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A00D4662A4C6727008601F3 /* MatchGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchGameApp.swift; sourceTree = "<group>"; };
 		8A29D00D2A45E85100153AED /* MatchGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A29D0102A45E85100153AED /* MatchGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchGameApp.swift; sourceTree = "<group>"; };
 		8A29D0122A45E85100153AED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8A29D0142A45E85200153AED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A29D0172A45E85200153AED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		8A29D0042A45E85100153AED = {
 			isa = PBXGroup;
 			children = (
-				8A29D00F2A45E85100153AED /* MachGame */,
+				8A29D00F2A45E85100153AED /* MatchGame */,
 				8A29D00E2A45E85100153AED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,17 +52,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8A29D00F2A45E85100153AED /* MachGame */ = {
+		8A29D00F2A45E85100153AED /* MatchGame */ = {
 			isa = PBXGroup;
 			children = (
+				8A00D4662A4C6727008601F3 /* MatchGameApp.swift */,
 				8A864E072A4C4A0600FB2198 /* MatchGame.swift */,
 				8A864E092A4C4D1300FB2198 /* EmojiMatchGame.swift */,
-				8A29D0102A45E85100153AED /* MatchGameApp.swift */,
 				8A29D0122A45E85100153AED /* ContentView.swift */,
 				8A29D0142A45E85200153AED /* Assets.xcassets */,
 				8A29D0162A45E85200153AED /* Preview Content */,
 			);
-			path = MachGame;
+			path = MatchGame;
 			sourceTree = "<group>";
 		};
 		8A29D0162A45E85200153AED /* Preview Content */ = {
@@ -144,9 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A864E082A4C4A0600FB2198 /* MatchGame.swift in Sources */,
+				8A00D4672A4C6727008601F3 /* MatchGameApp.swift in Sources */,
 				8A29D0132A45E85100153AED /* ContentView.swift in Sources */,
 				8A864E0A2A4C4D1300FB2198 /* EmojiMatchGame.swift in Sources */,
-				8A29D0112A45E85100153AED /* MatchGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +274,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MachGame/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MatchGame/Preview Content\"";
 				DEVELOPMENT_TEAM = 7T93UNM5FF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -289,7 +289,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = meunomeecris.MachGame;
+				PRODUCT_BUNDLE_IDENTIFIER = meunomeecris.MatchGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -307,7 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MachGame/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MatchGame/Preview Content\"";
 				DEVELOPMENT_TEAM = 7T93UNM5FF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -322,7 +322,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = meunomeecris.MachGame;
+				PRODUCT_BUNDLE_IDENTIFIER = meunomeecris.MatchGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
