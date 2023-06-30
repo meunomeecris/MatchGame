@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  EmojiMatchGameView.swift
 //  MachGame
 //
 //  Created by Cris Messias on 23/06/23.
@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @ObservedObject var viewModel: EmojiMatchGame
+struct EmojiMatchGameView: View {
+    @ObservedObject var game: EmojiMatchGame
     
     var body: some View {
         ScrollView {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 80))]) {
-                ForEach(viewModel.cards) { card in
+                ForEach(game.cards) { card in
                     CardView(card: card)
                         .aspectRatio(2/3, contentMode: .fit)
                         .onTapGesture {
-                            viewModel.choose(card)
+                            game.choose(card)
                         }
                 }
             }
@@ -29,7 +29,7 @@ struct ContentView: View {
 
 
 struct CardView: View {
-    let card: MatchGame<String>.Card
+    let card: EmojiMatchGame.Card
     
     var body: some View {
         ZStack {
@@ -50,9 +50,9 @@ struct CardView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         let game = EmojiMatchGame()
-//        ContentView(viewModel: game)
+//        EmojiMatchGameView(game: game)
 //            .preferredColorScheme(.light)
-        ContentView(viewModel: game)
+        EmojiMatchGameView(game: game)
             .preferredColorScheme(.dark)
     }
 }

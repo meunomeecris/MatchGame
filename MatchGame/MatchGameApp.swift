@@ -9,11 +9,17 @@ import SwiftUI
 
 @main
 struct MatchGameApp: App {
-    let game = EmojiMatchGame()
+    private let game = EmojiMatchGame()
     
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: game)
+            EmojiMatchGameView(game: game)
         }
     }
 }
+//
+//struct Previews_MatchGameApp_Previews: PreviewProvider {
+//    static var previews: some View {
+//        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+//    }
+//}
