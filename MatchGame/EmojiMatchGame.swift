@@ -15,7 +15,7 @@ class EmojiMatchGame: ObservableObject {
     @Published private var model = createMatchGame()
     
     private static func createMatchGame() -> MatchGame<String> {
-        MatchGame<String>(numberOfPairsOfCards: 4) { parIndex in
+        MatchGame<String>(numberOfPairsOfCards: 8) { parIndex in
             emojis[parIndex]
         }
     }
